@@ -2,14 +2,13 @@ package org.apitestautomation.springboot;
 
 import io.restassured.http.ContentType;
 import net.minidev.json.JSONObject;
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThan;
 
-class ApiTestAutomationApplicationTests {
+public class ApiTestAutomationApplicationTests {
 	private static final String ORDER_STATUS_NEW = "New";
 	private static final String ORDER_STATUS_IN_PROGRESS = "InProgress";
 	private static final String URL_PATH = "http://localhost:8080/api/v1/order";
