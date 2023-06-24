@@ -37,7 +37,7 @@ public class ApiTestAutomationApplicationTests extends TestBase {
 
 	@Test(priority = 2)
 	void processOrder_OrderIdNotProvided_InvalidRequest() {
-		JSONObject requestParams = new JSONObject();
+		JSONObject requestParams = getOrderAsBodyParam(ORDER_STATUS_NEW);
 		requestParams.remove("order_id");
 
 		given().accept(ContentType.JSON)
