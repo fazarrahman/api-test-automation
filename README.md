@@ -1,5 +1,8 @@
 # API TEST AUTOMATION
 
+## Test cases
+### Test cases is stored at test cases.xlsx
+
 ## How to run
 ### Spring boot rest api 
 #### run in the terminal : ./mvnw spring-boot:run
